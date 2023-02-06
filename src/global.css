@@ -33,3 +33,27 @@ footer .copyright a:hover {
 footer .copyright:before {
     content: '©';
 }
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.search-input {
+    border: 1px solid #17181c;
+    background-color: #17181c;
+    color: #02C39A;
+    height: 30px;
+    width: 250px;
+    font: 300 1em 'Fira Sans', sans-serif;
+}
+
+.submit-input {
+    border: 1px solid #17181c;
+    font: 300 1em 'Fira Sans', sans-serif;
+    border-radius: 10px;
+    color: #02C39A;
+    background-color: #17181c;
+}

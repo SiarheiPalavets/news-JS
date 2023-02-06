@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,15 +9,20 @@
     <body>
         <header>
             <h1>News Portal</h1>
+            <div class="date"></div>
         </header>
         <main>
+            <div class="search">
+                <input type="text" class="search-input" value="Enter word to search by topic" onfocus="value=''" />
+                <button type="submit" class="submit-input">Search</button>
+            </div>
             <div class="sources buttons"></div>
             <div class="news"></div>
         </main>
         <footer>
-            <p class="copyright">
-                Copyright <a href="https://newsapi.org">NewsAPI</a>
-            </p>
+            <div>
+                <p class="copyright">Copyright <a href="https://newsapi.org">NewsAPI</a></p>
+            </div>
         </footer>
 
         <template id="sourceItemTemp">
@@ -46,6 +51,6 @@
             </div>
         </template>
 
-        <script src="./index.js"></script>
+        <script src="./bundle.js"></script>
     </body>
 </html>
